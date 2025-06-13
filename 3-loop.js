@@ -85,5 +85,3 @@ for (let i = 0; i < 5; i++) {
 }
 console.log('sum:', sum);
 console.log('product:', product);
-
-//mm
