@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Local HTML</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>หัวข้อหลัก</h1>
+  <p id="message">ข้อความสำคัญ</p>
+  <span>ทำงานมาแล้ว: </span>
+  <span id="duration">0</span>
+  <hr />
+  <button onclick="changeText()">เปลี่ยนข้อความ</button>
+  <script>
+    let duration = 0
+    function changeText() {
+      setTimeout(() => {
+        document.getElementById("message").innerText = "ข้อความใหม่!"
+      }, 2000)
+    }
+
+    setInterval(() => {
+      document.getElementById("duration").innerText = duration++
+    }, 1000);
+  </script>
+</body>
+
+</html>
