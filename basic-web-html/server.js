@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/profile', (req, res) => {
+  res.sendFile(__dirname + '/profile.html');
+});
+
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
