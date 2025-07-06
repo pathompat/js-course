@@ -1,9 +1,6 @@
 <script setup>
-  // import { useCounter } from '@/composables/useCounter'
   import { computed, defineProps } from 'vue'
-  import { useCounter } from '@/composables/useCounter'
 
-  const { count } = useCounter()
   const props = defineProps({
     firstName: String,
     lastName: String
@@ -17,11 +14,10 @@
 <template>
   <div class="red-bg">
     <h2>Hello, {{ fullName }}!</h2>
-    <h3>Clicked: {{ count }}.</h3>
     <div>
       <slot></slot>
     </div>
-    <button>Submit</button>
+    <router-link to="/">Home</router-link>
   </div>
 </template>
 

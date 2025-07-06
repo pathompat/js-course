@@ -16,7 +16,7 @@
     :class="{ 'green-bg': count <= 5, 'red-bg': count > 5 }">
     <h2>Clicked: {{ count }} times</h2>
     <p v-if="count > 5">More than 5 times clicked!</p>
-    <button @click="increment">Click</button>
+    <button @click="increment" ref="btn">Click</button>
   </div>
 </template>
 
