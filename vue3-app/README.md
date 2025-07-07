@@ -20,5 +20,9 @@ npm run build
 npm run lint
 ```
 
+### Environment variables
+Create a `.env` file based on `.env.example` and fill in the API keys used for
+newsdata.io and marketstack services.
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
