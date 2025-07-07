@@ -28,10 +28,19 @@
     <v-navigation-drawer v-model="drawer" app>
       <v-list>
         <v-list-item to="/">
-          <v-list-item-title>Home</v-list-item-title>
+          <v-list-item-title>News</v-list-item-title>
         </v-list-item>
-        <v-list-item to="/about">
-          <v-list-item-title>About</v-list-item-title>
+        <v-list-item to="/market">
+          <v-list-item-title>Market</v-list-item-title>
+        </v-list-item>
+        <v-list-item to="/exchanges">
+          <v-list-item-title>Exchanges</v-list-item-title>
+        </v-list-item>
+        <v-list-item to="/profile">
+          <v-list-item-title>Profile</v-list-item-title>
+        </v-list-item>
+        <v-list-item to="/login">
+          <v-list-item-title>Login</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>

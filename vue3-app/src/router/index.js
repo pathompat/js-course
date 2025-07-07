@@ -1,13 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '../views/HomePage.vue';
-import AboutPage from '../views/AboutPage.vue';
-import UserDetailPage from '@/views/UserDetailPage.vue'
-import LoginPage from '@/views/LoginPage.vue'
+import NewsPage from '../views/NewsPage.vue';
+import LoginPage from '../views/LoginPage.vue';
+import ProfilePage from '../views/ProfilePage.vue';
+import MarketPage from '../views/MarketPage.vue';
+import ExchangesPage from '../views/ExchangesPage.vue';
+import UserDetailPage from '@/views/UserDetailPage.vue';
 
 const routes = [
+  { path: '/', component: NewsPage },
   { path: '/login', component: LoginPage },
-  { path: '/', component: HomePage },
-  { path: '/about', component: AboutPage },
+  { path: '/profile', component: ProfilePage },
+  { path: '/market', component: MarketPage },
+  { path: '/exchanges', component: ExchangesPage },
   { path: '/user/:id', component: () => UserDetailPage },
 ];
 
